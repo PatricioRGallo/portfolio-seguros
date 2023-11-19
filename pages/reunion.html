@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendar reunión</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
-    <header class="flex-container">
-        <div>
-            <a href="../index.html">
-                <div class="logo">
-                    <img src="../media/images/logo.png" alt="Logo" id="logo">
-                    <h1>Patricio Gallo</h1>
-                </div>
+    <header>
+        <div class="logo">
+            <a href="../index.html" aria-label="Home">
+                <img src="../media/images/logo.png" alt="Logo" id="logo" />
+                <h1>Patricio Gallo</h1>
             </a>
         </div>
         <nav>
@@ -27,13 +27,104 @@
             </ul>
         </nav>
         <div class="menu-icon">&#9776;</div>
-      </header>
+    </header>
     <hr>
     <main>
         <div>
-            <a href="https://wa.me/5493815906102" target="_blank"><img src="../media/images/whatsapp.png" alt="Ir a Whatsapp"
-                    class="boton-wsp"></a>
+            <a href="https://wa.me/5493815906102" target="_blank"><img src="../media/images/whatsapp.png"
+                    alt="Ir a Whatsapp" class="boton-wsp"></a>
         </div>
+        <section class="aprende">
+            <h2>
+                Con un productor asesor de seguros, es más seguro.
+            </h2>
+            <p>Entendemos que tu tiempo es valioso. Es por eso que ofrecemos la flexibilidad de reunirnos contigo de
+                manera virtual, a través de videollamadas. Esta opción te brinda la comodidad de discutir tus
+                necesidades de seguros desde la ubicación que elijas.
+            </p>
+
+            <div>
+                <h2>Nuestros Servicios:</h2>
+                <ul>
+                    <li>Seguros Personales: Protege tu hogar, tu auto y a tus seres queridos con nuestras opciones de
+                        seguros personales.</li>
+                    <li>Seguros Empresariales: Brindamos coberturas adaptadas a las necesidades específicas de tu
+                        negocio, garantizando tranquilidad y seguridad financiera.</li>
+                    <li>Asesoría Integral: No solo te proporciono pólizas, sino también asesoramiento continuo para
+                        adaptar tus coberturas a los cambios en tu vida o negocio.</li>
+                </ul>
+            </div>
+            <div>
+                <h2>¿Por qué Elegirnos?</h2>
+                <ul>
+                    <li>Experiencia Confiable: Con más de cuatro años en el sector, he trabajado con compañías líderes
+                        para brindar soluciones efectivas a mis clientes.</li>
+                    <li>Flexibilidad Horaria: Elige un horario que se ajuste a tu agenda. No hay necesidad de
+                        desplazarte; puedes conectarte desde la comodidad de tu hogar u oficina.</li>
+                    <li>Enfoque Digital: Utilizo tecnología de vanguardia para facilitar el proceso y brindarte
+                        respuestas rápidas y eficientes.</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Agendá tu Reunión: Completa el formulario de agendamiento indicando tu preferencia por una
+                        videollamada.</li>
+                    <li>Confirmación y Enlace: Recibirás una confirmación de tu reunión junto con un enlace para unirte
+                        a la videollamada en la fecha y hora acordadas.</li>
+                    <li>Conéctate y Discutamos: Simplemente haz clic en el enlace en el momento programado, y estaremos
+                        listos para discutir tus necesidades de seguros de manera detallada.</li>
+                </ul>
+            </div>
+            <div class="formularios">
+                <h2>Formulario de Agendamiento:</h2>
+                <h3>Información Personal:</h3>
+                <form action="#" class="formulario">
+                    <div class="label">
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" placeholder="Nombre Completo" required>
+                    </div>
+                    <div class="label">
+                        <label for="tel">Teléfono:</label>
+                        <input type="tel" id="tel" placeholder="Número de Teléfono" required>
+                    </div>
+                    <div class="label">
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" placeholder="Correo Electrónico" required>
+                    </div>
+                </form>
+                <h3>Intereses y Preferencias:</h3>
+                <form action="#" class="formulario">
+                    <div class="label">
+                        <label for="tipo-de-seguro">Tipo de Seguro de Interés:</label>
+                        <select id="tipo-de-seguro" required>
+                            <option value="Vida">Vida</option>
+                            <option value="Hogar">Hogar</option>
+                            <option value="Auto">Auto</option>
+                            <option value="Empresarial">Empresarial</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="label">
+                        <label for="comentarios">Comentarios Adicionales o Preguntas:</label>
+                        <textarea id="comentarios" placeholder="Escribe tus comentarios aquí"></textarea>
+                    </div>
+                    <div class="label">
+                        <label for="preferencia-hora">Preferencia de Día y Hora para la Reunión:</label>
+                        <input type="text" id="preferencia-hora" placeholder="Día y Hora Preferidos">
+                    </div>
+                    <div class="label">
+                        <label for="preferencia-contacto">¿Cómo Prefieres ser Contactado? (opcional)</label>
+                        <select id="preferencia-contacto">
+                            <option value="Correo Electrónico">Correo Electrónico</option>
+                            <option value="Teléfono">Teléfono</option>
+                        </select>
+                    </div>
+                </form>
+                <button type="submit" class="boton botongral">Enviar</button>
+
+            </div>
+
+        </section>
     </main>
     <hr>
     <footer>
@@ -49,17 +140,18 @@
                     target="_blank">www.argentina.gob.ar/ssn</a>
             </div>
             <div>
-                <img src="../media/images/logo-ssn.png" alt="logo ssn"/>
+                <img src="../media/images/logo-ssn.png" alt="logo ssn" />
             </div>
         </section>
         <hr />
         <section class="foot-3">
             <div class="copirig">
-                <img src="../media/images/logo-footer.png" alt="Logo" id="logo"/>
+                <img src="../media/images/logo-footer.png" alt="Logo" id="logo" />
                 <span>Copyright © 2023 Patricio Gallo</span>
             </div>
             <span>Powered by PG</span>
         </section>
     </footer>
 </body>
+
 </html>

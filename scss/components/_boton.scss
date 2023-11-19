@@ -1,0 +1,15 @@
+.boton {
+    margin: 1rem;
+    padding: 0.6rem;
+    border-radius: 0.2cm;
+    display: inline-block;
+    text-align: center;
+}
+
+.botongral {
+    background-color: $azul-intermedio;
+    color: #fff;
+    &:hover {
+        background-color: $azul-claro;
+    }
+}

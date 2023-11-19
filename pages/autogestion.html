@@ -10,12 +10,10 @@
 
 <body>
     <header>
-        <div>
-            <a href="../index.html">
-                <div class="logo">
-                    <img src="../media/images/logo.png" alt="Logo" id="logo">
-                    <h1>Patricio Gallo</h1>
-                </div>
+        <div class="logo">
+            <a href="../index.html" aria-label="Home">
+                <img src="../media/images/logo.png" alt="Logo" id="logo" />
+                <h1>Patricio Gallo</h1>
             </a>
         </div>
         <nav>
@@ -35,25 +33,25 @@
             <a href="https://wa.me/5493815906102" target="_blank"><img src="../media/images/whatsapp.png"
                     alt="Ir a Whatsapp" class="boton-wsp"></a>
         </div>
-        <section class="portada-formulario">
-            <div class="form-auto">
+        <section class="portada">
+            <div class="formularios">
                 <div>
                     <h4>Formulario de Siniestros</h4>
                     <form action="/procesar-siniestro" method="post" enctype="multipart/form-data"
                         class="formulario siniestros">
-                        <div>
+                        <div class="label">
                             <label for="fecha">Fecha del Siniestro (obligatorio)</label>
                             <input type="date" id="fecha" name="fecha" required>
                         </div>
-                        <div>
+                        <div class="label">
                             <label for="hora">Hora del Siniestro (obligatorio)</label>
                             <input type="time" id="hora" name="hora" required>
                         </div>
-                        <div>
+                        <div class="label">
                             <label for="lugar">Lugar del Siniestro (obligatorio)</label>
                             <input type="text" id="lugar" name="lugar" required>
                         </div>
-                        <div>
+                        <div class="label">
                             <label for="forma_ocurrencia">Forma de Ocurrencia (obligatorio)</label>
                             <textarea id="forma_ocurrencia" name="forma_ocurrencia" rows="4" required></textarea>
                         </div>
@@ -62,15 +60,15 @@
                 <div>
                     <h5>Información del Asegurado</h5>
                     <form action="/procesar-siniestro" method="post" enctype="multipart/form-data" class="formulario">
-                        <div>
+                        <div class="label">
                             <label for="cedula">Foto de la Cédula de Identificación Vehicular (obligatorio)</label>
                             <input type="file" id="cedula" name="cedula" accept="image/*" required>
                         </div>
-                        <div>
+                        <div class="label">
                             <label for="carnet_manejo">Foto del Carnet de Manejo (obligatorio)</label>
                             <input type="file" id="carnet_manejo" name="carnet_manejo" accept="image/*" required>
                         </div>
-                        <div>
+                        <div class="label">
                             <label for="fotos_auto">Fotos del Auto Asegurado (obligatorio)</label>
                             <input type="file" id="fotos_auto" name="fotos_auto[]" accept="image/*" multiple required>
                         </div>
@@ -80,26 +78,26 @@
                     <h5>Información del Tercero (opcional)</h5>
                     <form action="/procesar-siniestro" method="post" enctype="multipart/form-data"
                         class="formulario siniestros">
-                        <div>
+                        <div class="label">
                             <label for="patente_tercero">Número de Patente</label>
                             <input type="text" id="patente_tercero" name="patente_tercero">
                         </div>
-                        <div>
+                        <div class="label">
                             <label for="aseguradora_tercero">Compañía Aseguradora</label>
                             <input type="text" id="aseguradora_tercero" name="aseguradora_tercero">
                         </div>
-                        <div>
+                        <div class="label">
                             <label for="poliza_tercero">Número de Póliza</label>
                             <input type="text" id="poliza_tercero" name="poliza_tercero">
                         </div>
-                        <div>
+                        <div class="label">
                             <label for="conductor_tercero">Conductor tercero</label>
                             <input type="text" id="conductor_tercero" name="conductor_tercero">
                         </div>
                     </form>
                 </div>
                 <div class="enviar">
-                    <button type="submit" class="submit">Enviar siniestro</button>
+                    <button type="submit" class="boton botongral">Enviar siniestro</button>
                 </div>
             </div>
         </section>

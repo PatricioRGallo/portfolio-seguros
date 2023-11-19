@@ -1,0 +1,11 @@
+.boton-wsp {
+    z-index: 9999;
+    width: 4rem;
+    position: fixed;
+    right: 2rem;
+    bottom: 1rem;
+
+    &:hover {
+        bottom: 1.25rem;
+    }
+}

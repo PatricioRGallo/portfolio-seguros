@@ -1,0 +1,46 @@
+
+footer {
+
+    
+
+    .foot-2 {
+        img {
+            width: 12rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .foot-1 {
+        min-height: 400px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    }
+
+    section {
+        padding: 2rem 7rem 2rem 2rem;
+
+
+        @media (min-width: 1024px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .foot-3 {
+        background-color: #04588c;
+        color: #f2f2f2;
+    }
+    .copirig {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .copirig span {
+        padding: 1rem;
+    }
+}

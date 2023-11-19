@@ -10,12 +10,10 @@
 
 <body>
     <header>
-        <div>
-            <a href="../../index.html">
-                <div class="logo">
-                    <img src="../../media/images/logo.png" alt="Logo" id="logo">
-                    <h1>Patricio Gallo</h1>
-                </div>
+        <div class="logo">
+            <a href="../../index.html" aria-label="Home">
+                <img src="../../media/images/logo.png" alt="Logo" id="logo" />
+                <h1>Patricio Gallo</h1>
             </a>
         </div>
         <nav>
@@ -32,21 +30,21 @@
     </header>
     <hr>
     <main>
-        <section class="portada-formulario">
+        <section class="portada">
 
-            <div class="form-auto">
+            <div class="formularios">
                 <h4>Completá...</h4>
                 <h5>Datos de tu vehículo...</h5>
                 <form action="" class="formulario">
-                    <div>
+                    <div class="label">
                         <label for="marca">Marca</label>
                         <input type="text" id="marca">
                     </div>
-                    <div>
+                    <div class="label">
                         <label for="año">Año</label>
                         <input type="number" id="año">
                     </div>
-                    <div>
+                    <div class="label">
                         <label for="modelo">Modelo</label>
                         <input type="text" id="modelo">
                     </div>
@@ -54,15 +52,15 @@
 
                 <h5>Sobre vos...</h5>
                 <form action="" class="formulario">
-                    <div>
+                    <div class="label">
                         <label for="tel">Teléfono</label>
                         <input type="tel" id="tel">
                     </div>
-                    <div>
+                    <div class="label">
                         <label for="mail">Email</label>
                         <input type="email" id="mail">
                     </div>
-                    <div>
+                    <div class="label">
                         <label for="provincia">Provincia</label>
                         <select name="" id="provincia">
                             <option value="">Tucumán</option>
@@ -93,7 +91,7 @@
                     </div>
                 </form>
                 <div class="enviar">
-                    <button type="submit" class="submit">Solicitar cotización</button>
+                    <button type="submit" class="boton botongral">Solicitar cotización</button>
                 </div>
                 <p>Tené en cuenta que no recibirás una cotización automática, sino que serás contactado por un
                     especialista para obtener un asesoramiento preciso.

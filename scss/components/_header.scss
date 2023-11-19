@@ -1,0 +1,75 @@
+header {
+    @include fondo-fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    padding: 1rem 2rem;
+    align-items: center;
+
+    #logo {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .logo a {
+        width: 16rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    a {
+        color: $azul-oscuro;
+
+        &:hover {
+            color: $celeste;
+        }
+    }
+
+    .menu-icon {
+        font-size: 1.5em;
+        cursor: pointer;
+        background-color: #186bd9;
+        color: #f2f2f2;
+        width: 2.1875rem;
+        height: 2.1875rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media (max-width: 720px) {
+        nav ul {
+            display: none;
+        }
+    }
+
+    @media (min-width:720px) and (max-width: 1024px) {
+        nav ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(2, 50px);
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+            list-style: none;
+        }
+
+        .menu-icon {
+            display: none;
+        }
+    }
+
+    @media (min-width: 1024px) {
+
+        .menu-icon {
+            display: none;
+        }
+
+        nav li {
+            display: inline-block;
+            padding: 1rem;
+        }
+
+
+    }
+}

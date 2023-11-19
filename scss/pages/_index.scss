@@ -1,0 +1,138 @@
+#index {
+    padding-bottom: 0rem;
+
+    @media (min-width: 1024px) {
+        min-height: 560px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: flex-end;
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: flex-end;
+    }
+
+}
+
+.servicios,
+.aprende {
+
+    h2,
+    h3 {
+        text-align: center;
+    }
+}
+
+.servicios,
+.aprende {
+    img {
+        width: 100%;
+    }
+}
+
+.aprende {
+    background-color: #f2f2f2;
+}
+
+.grilla {
+    position: relative;
+
+    div {
+        position: relative;
+    }
+
+    h5 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    img {
+        width: 90%;
+        height: 90%;
+        margin: 1rem;
+        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
+        border-radius: 1.25rem;
+        opacity: 1;
+        transition: opacity 0.3s, box-shadow 0.3s;
+    }
+
+    @media (min-width: 720px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 30%);
+    }
+}
+
+.grilla div:hover img {
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
+    opacity: .3;
+}
+
+.grilla div:hover h5 {
+    opacity: 1;
+}
+
+.botonesPortada {
+    display: flex;
+}
+
+.reunion {
+    width: 9rem;
+}
+
+.sabermas {
+    background-color: #f2f2f2;
+    border: #04588c 1px solid;
+    color: #04588c;
+    width: 7rem;
+    &:hover {
+        border: #63b0f2 1px solid;
+    }
+}
+
+.image-patricio {
+    height: 31rem;
+
+    @media (min-width: 720px) {
+        grid-row: span 2;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+    .galeria {
+        display: flex;
+        width: 600;
+        height: 430px;
+
+        img {
+            padding-top: 1rem;
+            width: 0px;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: 1;
+            transition: .5s ease;
+
+            &:hover {
+                width: 300px;
+                opacity: .3;
+                filter: contrast(120%);
+            }
+        }
+    }
+}
