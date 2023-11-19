@@ -19,11 +19,11 @@
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/about.html">Acerca de mí</a></li>
-                <li><a href="../pages/cotizador.html">Cotizar</a></li>
-                <li><a href="../pages/segper.html">Seguros personas</a></li>
-                <li><a href="../pages/segemp.html">Seguros empresas</a></li>
-                <li><a href="../pages/autogestion.html">Autogestión</a></li>
+                <li><a href="./about.html">Acerca de mí</a></li>
+                <li><a href="./cotizador.html">Cotizar</a></li>
+                <li><a href="./segper.html">Seguros personas</a></li>
+                <li><a href="./segemp.html">Seguros empresas</a></li>
+                <li><a href="./autogestion.html">Autogestión</a></li>
             </ul>
         </nav>
         <div class="menu-icon">&#9776;</div>
@@ -40,24 +40,24 @@
                 <h4>Contáctanos</h4>
                 <h5>Completá tu información...</h5>
                 <form action="/procesar-formulario" method="post" class="form-contacto">
-                    <div>
+                    <div class="label">
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" required>
                     </div>
-                    <div>
+                    <div class="label">
                         <label for="correo">Correo Electrónico:</label>
                         <input type="email" id="correo" name="correo" required>
                     </div>
-                    <div>
+                    <div class="label">
                         <label for="telefono">Teléfono:</label>
                         <input type="tel" id="telefono" name="telefono">
                     </div>
-                    <div>
+                    <div class="label">
                         <label for="mensaje">Mensaje:</label>
                         <textarea id="mensaje" name="mensaje" required></textarea>
                     </div>
                     <div>
-                        <button type="submit">Enviar</button>
+                        <button type="submit" class="boton botongral">Enviar</button>
                     </div>
                 </form>
             </div>

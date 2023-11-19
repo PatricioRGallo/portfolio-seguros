@@ -204,10 +204,11 @@ main section {
   padding: 1.25rem;
   transition: box-shadow 0.3s;
   cursor: pointer;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .elementos-cotizables div:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -221,6 +222,9 @@ main section {
   .elementos-cotizables .auto-span2 {
     grid-row: span 2;
   }
+}
+.elementos-cotizables img {
+  height: 5rem;
 }
 
 header {
