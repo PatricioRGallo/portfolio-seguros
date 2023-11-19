@@ -5,30 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendar reunión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="../index.html" aria-label="Home">
-                <img src="../media/images/logo.png" alt="Logo" id="logo" />
-                <h1>Patricio Gallo</h1>
-            </a>
+    <header class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <div class="logoyh1">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../media/images/logo.png" class="logo" alt="Logo de Patricio Gallo">
+                    <h1 class="fs-2 fw-bold">Patricio Gallo</h1>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./about.html">Quiénes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./autogestion.html">Siniestros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Cotizá tu seguro
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./cotizadores/vehic.html">Vehículo</a></li>
+                            <li><a class="dropdown-item" href="./cotizadores/vida.html">Vida y capitalización</a></li>
+                            <li><a class="dropdown-item" href="./cotizador.html">Otro tipo de seguro</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="./about.html">Acerca de mí</a></li>
-                <li><a href="./cotizador.html">Cotizar</a></li>
-                <li><a href="./segper.html">Seguros personas</a></li>
-                <li><a href="./segemp.html">Seguros empresas</a></li>
-                <li><a href="./autogestion.html">Autogestión</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="menu-icon">&#9776;</div>
     </header>
-    <hr>
     <main>
         <div>
             <a href="https://wa.me/5493815906102" target="_blank"><img src="../media/images/whatsapp.png"
@@ -152,6 +172,8 @@
             <span>Powered by PG</span>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

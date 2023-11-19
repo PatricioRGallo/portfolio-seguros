@@ -231,65 +231,21 @@ header {
   background-image: url(../media/images/fondo.jpg);
   background-size: cover;
   background-attachment: fixed;
+}
+
+.logoyh1 a {
+  width: 16rem;
+  height: 4rem;
   display: flex;
   justify-content: space-between;
-  height: 6rem;
-  padding: 1rem 2rem;
   align-items: center;
 }
-header #logo {
-  width: 3rem;
-  height: 3rem;
-}
-header .logo a {
-  width: 16rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-header a {
+.logoyh1 h1 {
+  margin: 0;
   color: #04588c;
 }
-header a:hover {
-  color: #63b0f2;
-}
-header .menu-icon {
-  font-size: 1.5em;
-  cursor: pointer;
-  background-color: #186bd9;
-  color: #f2f2f2;
-  width: 2.1875rem;
-  height: 2.1875rem;
-  display: flex;
-  justify-content: center;
-}
-@media (max-width: 720px) {
-  header nav ul {
-    display: none;
-  }
-}
-@media (min-width: 720px) and (max-width: 1024px) {
-  header nav ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, 50px);
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    list-style: none;
-  }
-  header .menu-icon {
-    display: none;
-  }
-}
-@media (min-width: 1024px) {
-  header .menu-icon {
-    display: none;
-  }
-  header nav li {
-    display: inline-block;
-    padding: 1rem;
-  }
+.logoyh1 .logo {
+  width: 3rem;
 }
 
 .formularios {
