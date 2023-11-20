@@ -14,7 +14,7 @@
     <header class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
             <div class="logoyh1">
-                <a class="navbar-brand" href="../index.html">
+                <a class="navbar-brand enlace" href="../index.html">
                     <img src="../media/images/logo.png" class="logo" alt="Logo de Patricio Gallo">
                     <h1 class="fs-2 fw-bold">Patricio Gallo</h1>
                 </a>
@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./about.html">Quiénes somos</a>
+                        <a class="nav-link enlace" aria-current="page" href="./about.html">Quiénes somos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./autogestion.html">Siniestros</a>
@@ -99,24 +99,24 @@
                 <h2>Formulario de Agendamiento:</h2>
                 <h3>Información Personal:</h3>
                 <form action="#" class="formulario">
-                    <div class="label">
-                        <label for="nombre">Nombre Completo:</label>
-                        <input type="text" id="nombre" placeholder="Nombre Completo" required>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre Completo:</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre Completo" required>
                     </div>
-                    <div class="label">
-                        <label for="tel">Teléfono:</label>
-                        <input type="tel" id="tel" placeholder="Número de Teléfono" required>
+                    <div class="mb-3">
+                        <label for="tel" class="form-label">Teléfono:</label>
+                        <input type="tel" class="form-control" id="tel" placeholder="Número de Teléfono" required>
                     </div>
-                    <div class="label">
-                        <label for="mail">Email:</label>
-                        <input type="email" id="mail" placeholder="Correo Electrónico" required>
+                    <div class="mb-3">
+                        <label for="mail" class="form-label">Email</label>
+                        <input type="email" id="mail" class="form-control" placeholder="Correo Electrónico" required>
                     </div>
                 </form>
                 <h3>Intereses y Preferencias:</h3>
                 <form action="#" class="formulario">
-                    <div class="label">
-                        <label for="tipo-de-seguro">Tipo de Seguro de Interés:</label>
-                        <select id="tipo-de-seguro" required>
+                    <div class="mb-3">
+                        <label for="tipo-de-seguro" class="form-label">Tipo de Seguro de Interés:</label>
+                        <select class="form-control" id="tipo-de-seguro" required>
                             <option value="Vida">Vida</option>
                             <option value="Hogar">Hogar</option>
                             <option value="Auto">Auto</option>
@@ -124,17 +124,17 @@
                             <option value="Otro">Otro</option>
                         </select>
                     </div>
-                    <div class="label">
-                        <label for="comentarios">Comentarios Adicionales o Preguntas:</label>
-                        <textarea id="comentarios" placeholder="Escribe tus comentarios aquí"></textarea>
+                    <div class="mb-3">
+                        <label for="comentarios" class="form-label">Comentarios Adicionales o Preguntas:</label>
+                        <textarea class="form-control" id="comentarios" placeholder="Escribe tus comentarios aquí"></textarea>
                     </div>
-                    <div class="label">
-                        <label for="preferencia-hora">Preferencia de Día y Hora para la Reunión:</label>
-                        <input type="text" id="preferencia-hora" placeholder="Día y Hora Preferidos">
+                    <div class="mb-3">
+                        <label for="preferencia-hora" class="form-label">Preferencia de Día y Hora para la Reunión:</label>
+                        <input type="text" class="form-control" id="preferencia-hora" placeholder="Día y Hora Preferidos">
                     </div>
-                    <div class="label">
-                        <label for="preferencia-contacto">¿Cómo Prefieres ser Contactado? (opcional)</label>
-                        <select id="preferencia-contacto">
+                    <div class="mb-3">
+                        <label for="preferencia-contacto" class="form-label">¿Cómo Prefieres ser Contactado? (opcional)</label>
+                        <select id="preferencia-contacto" class="form-control">
                             <option value="Correo Electrónico">Correo Electrónico</option>
                             <option value="Teléfono">Teléfono</option>
                         </select>

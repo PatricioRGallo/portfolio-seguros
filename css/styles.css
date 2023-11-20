@@ -30,10 +30,6 @@ h5 {
   color: #63b0f2;
 }
 
-a {
-  text-decoration: none;
-}
-
 .portada {
   background-image: url(../media/images/fondo.jpg);
   background-size: cover;
@@ -232,20 +228,24 @@ header {
   background-size: cover;
   background-attachment: fixed;
 }
-
-.logoyh1 a {
+header .logoyh1 a {
   width: 16rem;
   height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.logoyh1 h1 {
+header .logoyh1 h1 {
   margin: 0;
+}
+header .logoyh1 .logo {
+  width: 3rem;
+}
+header .enlace {
   color: #04588c;
 }
-.logoyh1 .logo {
-  width: 3rem;
+header .enlace:hover {
+  color: #389bf2;
 }
 
 .formularios {

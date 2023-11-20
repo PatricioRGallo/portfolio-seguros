@@ -1,21 +1,25 @@
 header {
     @include fondo-fixed;
-}
-
-.logoyh1 {
-    a {
-        width: 16rem;
-        height: 4rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .logoyh1 {
+        a {
+            width: 16rem;
+            height: 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        h1 {
+            margin: 0;
+        }
+        .logo {
+            width: 3rem;
+        }
     }
-
-    h1 {
-        margin: 0;
+    .enlace {
         color: $azul-oscuro;
-    }
-    .logo {
-        width: 3rem;
+        &:hover {
+            color: $azul-claro;
+        }
     }
 }
