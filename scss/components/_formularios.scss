@@ -38,6 +38,10 @@
     @media (min-width: 1024px) {
         display: flex;
         justify-content: space-evenly;
+        div {
+            width: 100%;
+            padding: 0rem 1rem;
+        }
     }
 }
 

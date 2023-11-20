@@ -38,7 +38,7 @@ h5 {
 
 @media (max-width: 720px) {
   main {
-    text-align: justify;
+    p: justify;
   }
 }
 @media (min-width: 1024px) {
@@ -284,6 +284,10 @@ header .enlace:hover {
   .formulario {
     display: flex;
     justify-content: space-evenly;
+  }
+  .formulario div {
+    width: 100%;
+    padding: 0rem 1rem;
   }
 }
 

@@ -43,15 +43,13 @@ h5 {
     color: $celeste;
 }
 
-
-
 .portada {
     @include fondo-fixed;
 }
 
 main {
     @media (max-width: 720px) {
-        text-align: justify;
+        p: justify;
     }
 
     @media (min-width: 1024px) {
