@@ -1,4 +1,4 @@
-.formularios {
+.caja-formulario {
     background-color: #ffffff;
     padding: 2rem;
     border-radius: 1rem;
@@ -9,11 +9,15 @@
         box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
         background-color: #f8f8f8;
     }
+
+    @media (min-width: 720px) {
+        padding: 2rem 6.25rem;
+    }
 }
 
 
 .siniestros {
-    
+
     @media (max-width: 1024px) {
         display: flex;
         flex-direction: column;
@@ -33,5 +37,13 @@
 .formulario {
     @media (min-width: 1024px) {
         display: flex;
+        justify-content: space-evenly;
     }
+}
+
+.formulariocargardoc {
+@media (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+}
 }

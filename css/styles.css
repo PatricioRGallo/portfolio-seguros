@@ -46,9 +46,6 @@ h5 {
     text-align: start;
   }
 }
-main section {
-  min-height: 650px;
-}
 @media (max-width: 1024px) {
   main section {
     padding: 2rem;
@@ -248,16 +245,21 @@ header .enlace:hover {
   color: #389bf2;
 }
 
-.formularios {
+.caja-formulario {
   background-color: #ffffff;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s, background-color 0.3s;
 }
-.formularios:hover {
+.caja-formulario:hover {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
   background-color: #f8f8f8;
+}
+@media (min-width: 720px) {
+  .caja-formulario {
+    padding: 2rem 6.25rem;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -281,6 +283,14 @@ header .enlace:hover {
 @media (min-width: 1024px) {
   .formulario {
     display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 1024px) {
+  .formulariocargardoc {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -316,7 +326,7 @@ footer .foot-2 img {
 }
 @media (min-width: 1024px) {
   footer .foot-1 {
-    min-height: 400px;
+    min-height: 300px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
