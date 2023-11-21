@@ -10,7 +10,10 @@
   height: 3rem;
 }
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
   padding: 1rem;
 }
 
@@ -30,6 +33,13 @@ h5 {
   color: #63b0f2;
 }
 
+.enlace {
+  color: #186db9;
+}
+.enlace:hover {
+  color: #389bf2;
+}
+
 .portada {
   background-image: url(../media/images/fondo.jpg);
   background-size: cover;
@@ -37,8 +47,8 @@ h5 {
 }
 
 @media (max-width: 720px) {
-  main {
-    p: justify;
+  main p {
+    text-align: justify;
   }
 }
 @media (min-width: 1024px) {
@@ -94,13 +104,13 @@ h5 {
   background-color: #f2f2f2;
 }
 
-.grilla {
+.grilla, .galeria {
   position: relative;
 }
-.grilla div {
+.grilla div, .galeria div {
   position: relative;
 }
-.grilla h5 {
+.grilla h5, .galeria h5 {
   width: 100%;
   height: 100%;
   display: flex;
@@ -113,9 +123,9 @@ h5 {
   opacity: 0;
   transition: opacity 0.3s;
 }
-.grilla img {
+.grilla img, .galeria img {
   width: 90%;
-  height: 90%;
+  height: 17rem;
   margin: 1rem;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
   object-fit: cover;
@@ -124,7 +134,7 @@ h5 {
   transition: opacity 0.3s, box-shadow 0.3s;
 }
 @media (min-width: 720px) {
-  .grilla {
+  .grilla, .galeria {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 30%);
@@ -137,6 +147,15 @@ h5 {
 }
 
 .grilla div:hover h5 {
+  opacity: 1;
+}
+
+.galeria img:hover {
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
+  opacity: 0.3;
+}
+
+.galeria img:hover {
   opacity: 1;
 }
 
@@ -238,12 +257,6 @@ header .logoyh1 h1 {
 header .logoyh1 .logo {
   width: 3rem;
 }
-header .enlace {
-  color: #04588c;
-}
-header .enlace:hover {
-  color: #389bf2;
-}
 
 .caja-formulario {
   background-color: #ffffff;
@@ -259,20 +272,6 @@ header .enlace:hover {
 @media (min-width: 720px) {
   .caja-formulario {
     padding: 2rem 6.25rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  .siniestros {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (min-width: 1024px) {
-  .siniestros {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
   }
 }
 
@@ -325,6 +324,9 @@ header .enlace:hover {
   background-color: #389bf2;
 }
 
+footer .foot-2 div {
+  padding: 0rem 1rem;
+}
 footer .foot-2 img {
   width: 12rem;
 }
@@ -334,6 +336,10 @@ footer .foot-2 img {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+  }
+  footer .foot-2 {
+    padding: 1rem;
+    text-align: center;
   }
 }
 footer section {

@@ -22,7 +22,10 @@ $azul-oscuro: #04588c;
     height: 3rem;
 }
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
     padding: 1rem;
 
 }
@@ -43,13 +46,23 @@ h5 {
     color: $celeste;
 }
 
+.enlace {
+    color: $azul-intermedio;
+
+    &:hover {
+        color: $azul-claro;
+    }
+}
+
 .portada {
     @include fondo-fixed;
 }
 
 main {
     @media (max-width: 720px) {
-        p: justify;
+        p {
+            text-align: justify;
+        }
     }
 
     @media (min-width: 1024px) {

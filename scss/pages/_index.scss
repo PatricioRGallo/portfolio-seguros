@@ -38,7 +38,7 @@
     background-color: #f2f2f2;
 }
 
-.grilla {
+.grilla, .galeria {
     position: relative;
 
     div {
@@ -61,7 +61,7 @@
 
     img {
         width: 90%;
-        height: 90%;
+        height: 17rem;
         margin: 1rem;
         box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
         object-fit: cover;
@@ -83,6 +83,16 @@
 }
 
 .grilla div:hover h5 {
+    opacity: 1;
+}
+
+//
+.galeria img:hover  {
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
+    opacity: .3;
+}
+
+.galeria img:hover {
     opacity: 1;
 }
 

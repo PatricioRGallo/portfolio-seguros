@@ -15,21 +15,6 @@
     }
 }
 
-
-.siniestros {
-
-    @media (max-width: 1024px) {
-        display: flex;
-        flex-direction: column;
-    }
-
-    @media (min-width: 1024px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-}
-
 .label {
     padding: .8rem;
 }
@@ -38,6 +23,7 @@
     @media (min-width: 1024px) {
         display: flex;
         justify-content: space-evenly;
+
         div {
             width: 100%;
             padding: 0rem 1rem;
@@ -46,8 +32,8 @@
 }
 
 .formulariocargardoc {
-@media (min-width: 1024px) {
-    display: flex;
-    flex-direction: column;
-}
+    @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+    }
 }

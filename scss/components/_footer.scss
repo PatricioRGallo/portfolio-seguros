@@ -1,9 +1,8 @@
-
 footer {
-
-    
-
     .foot-2 {
+        div {
+            padding: 0rem 1rem;
+        }
         img {
             width: 12rem;
         }
@@ -11,11 +10,16 @@ footer {
 
     @media (min-width: 1024px) {
         .foot-1 {
-        min-height: 300px;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-    }
+            min-height: 300px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+
+        .foot-2 {
+            padding: 1rem;
+            text-align: center;
+        }
     }
 
     section {
@@ -34,12 +38,13 @@ footer {
         background-color: #04588c;
         color: #f2f2f2;
     }
+
     .copirig {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    
+
     .copirig span {
         padding: 1rem;
     }

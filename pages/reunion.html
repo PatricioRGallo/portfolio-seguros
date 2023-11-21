@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendar reunión</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
@@ -38,7 +38,8 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item enlace" href="./cotizadores/vehic.html">Vehículo</a></li>
-                            <li><a class="dropdown-item enlace" href="./cotizadores/vida.html">Vida y capitalización</a></li>
+                            <li><a class="dropdown-item enlace" href="./cotizadores/vida.html">Vida y capitalización</a>
+                            </li>
                             <li><a class="dropdown-item enlace" href="./cotizador.html">Otro tipo de seguro</a></li>
                         </ul>
                     </li>
@@ -98,47 +99,58 @@
             <div class="caja-formulario">
                 <h2>Formulario de Agendamiento:</h2>
                 <h3>Información Personal:</h3>
-                <form action="#" class="formulario">
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre Completo:</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Nombre Completo" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="tel" class="form-label">Teléfono:</label>
-                        <input type="tel" class="form-control" id="tel" placeholder="Número de Teléfono" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="mail" class="form-label">Email</label>
-                        <input type="email" id="mail" class="form-control" placeholder="Correo Electrónico" required>
-                    </div>
+                <form action="#">
+                    <fieldset class="formulario">
+
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre Completo:</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre Completo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tel" class="form-label">Teléfono:</label>
+                            <input type="tel" class="form-control" id="tel" placeholder="Número de Teléfono" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mail" class="form-label">Email</label>
+                            <input type="email" id="mail" class="form-control" placeholder="Correo Electrónico"
+                                required>
+                        </div>
+                    </fieldset>
                 </form>
                 <h3>Intereses y Preferencias:</h3>
-                <form action="#" class="formulario">
-                    <div class="mb-3">
-                        <label for="tipo-de-seguro" class="form-label">Tipo de Seguro de Interés:</label>
-                        <select class="form-control" id="tipo-de-seguro" required>
-                            <option value="Vida">Vida</option>
-                            <option value="Hogar">Hogar</option>
-                            <option value="Auto">Auto</option>
-                            <option value="Empresarial">Empresarial</option>
-                            <option value="Otro">Otro</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="comentarios" class="form-label">Comentarios Adicionales o Preguntas:</label>
-                        <textarea class="form-control" id="comentarios" placeholder="Escribe tus comentarios aquí"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <label for="preferencia-hora" class="form-label">Preferencia de Día y Hora para la Reunión:</label>
-                        <input type="text" class="form-control" id="preferencia-hora" placeholder="Día y Hora Preferidos">
-                    </div>
-                    <div class="mb-3">
-                        <label for="preferencia-contacto" class="form-label">¿Cómo Prefieres ser Contactado? (opcional)</label>
-                        <select id="preferencia-contacto" class="form-control">
-                            <option value="Correo Electrónico">Correo Electrónico</option>
-                            <option value="Teléfono">Teléfono</option>
-                        </select>
-                    </div>
+                <form action="#">
+                    <fieldset class="formulario">
+
+                        <div class="mb-3">
+                            <label for="tipo-de-seguro" class="form-label">Tipo de Seguro de Interés:</label>
+                            <select class="form-control" id="tipo-de-seguro" required>
+                                <option value="Vida">Vida</option>
+                                <option value="Hogar">Hogar</option>
+                                <option value="Auto">Auto</option>
+                                <option value="Empresarial">Empresarial</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios Adicionales o Preguntas:</label>
+                            <textarea class="form-control" id="comentarios"
+                                placeholder="Escribe tus comentarios aquí"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="preferencia-hora" class="form-label">Preferencia de Día y Hora para la
+                                Reunión:</label>
+                            <input type="text" class="form-control" id="preferencia-hora"
+                                placeholder="Día y Hora Preferidos">
+                        </div>
+                        <div class="mb-3">
+                            <label for="preferencia-contacto" class="form-label">¿Cómo Prefieres ser Contactado?
+                                (opcional)</label>
+                            <select id="preferencia-contacto" class="form-control">
+                                <option value="Correo Electrónico">Correo Electrónico</option>
+                                <option value="Teléfono">Teléfono</option>
+                            </select>
+                        </div>
+                    </fieldset>
                 </form>
                 <button type="submit" class="boton botongral">Enviar</button>
 
@@ -172,7 +184,9 @@
             <span>Powered by PG</span>
         </section>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
 </body>
 

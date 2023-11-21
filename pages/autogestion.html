@@ -59,64 +59,72 @@
             <div class="caja-formulario">
                 <div>
                     <h4>Formulario de Siniestros</h4>
-                    <form action="" class="formulario" method="post" enctype="multipart/form-data"
-                        class="formulario siniestros">
-                        <div class="mb-3">
-                            <label for="fecha" class="form-label">Fecha del Siniestro (obligatorio)</label>
-                            <input class="form-control" type="date" id="fecha" name="fecha" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="hora" class="form-label">Hora del Siniestro (obligatorio)</label>
-                            <input class="form-control" type="time" id="hora" name="hora" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="lugar" class="form-label">Lugar del Siniestro (obligatorio)</label>
-                            <input class="form-control" type="text" id="lugar" name="lugar" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="forma_ocurrencia" class="form-label">Forma de Ocurrencia (obligatorio)</label>
-                            <textarea class="form-control" id="forma_ocurrencia" name="forma_ocurrencia" rows="3"
-                                required></textarea>
-                        </div>
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <fieldset class="formulario">
+                            <div class="mb-3">
+                                <label for="fecha" class="form-label">Fecha del Siniestro (obligatorio)</label>
+                                <input class="form-control" type="date" id="fecha" name="fecha" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="hora" class="form-label">Hora del Siniestro (obligatorio)</label>
+                                <input class="form-control" type="time" id="hora" name="hora" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="lugar" class="form-label">Lugar del Siniestro (obligatorio)</label>
+                                <input class="form-control" type="text" id="lugar" name="lugar" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="forma_ocurrencia" class="form-label">Forma de Ocurrencia
+                                    (obligatorio)</label>
+                                <textarea class="form-control" id="forma_ocurrencia" name="forma_ocurrencia" rows="3"
+                                    required></textarea>
+                            </div>
+                        </fieldset>
                     </form>
                     <h5>Información del Asegurado</h5>
-                    <form class="formulario formulariocargardoc" action="/procesar-siniestro" method="post" enctype="multipart/form-data">
-                        <div class="mb-3">
-                            <label for="cedula" class="form-label">Foto de la Cédula de Identificación Vehicular
-                                (obligatorio)</label>
-                            <input class="form-control" type="file" id="cedula" name="cedula" accept="image/*" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="carnet_manejo" class="form-label">Foto del Carnet de Manejo
-                                (obligatorio)</label>
-                            <input class="form-control" type="file" id="carnet_manejo" name="carnet_manejo"
-                                accept="image/*" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="fotos_auto" class="form-label">Fotos del Auto Asegurado (obligatorio)</label>
-                            <input class="form-control" type="file" id="fotos_auto" name="fotos_auto[]" accept="image/*"
-                                multiple required>
-                        </div>
+                    <form action="/procesar-siniestro" method="post" enctype="multipart/form-data">
+                        <fieldset class="formulario formulariocargardoc">
+                            <div class="mb-3">
+                                <label for="cedula" class="form-label">Foto de la Cédula de Identificación Vehicular
+                                    (obligatorio)</label>
+                                <input class="form-control" type="file" id="cedula" name="cedula" accept="image/*"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="carnet_manejo" class="form-label">Foto del Carnet de Manejo
+                                    (obligatorio)</label>
+                                <input class="form-control" type="file" id="carnet_manejo" name="carnet_manejo"
+                                    accept="image/*" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="fotos_auto" class="form-label">Fotos del Auto Asegurado
+                                    (obligatorio)</label>
+                                <input class="form-control" type="file" id="fotos_auto" name="fotos_auto[]"
+                                    accept="image/*" multiple required>
+                            </div>
+                        </fieldset>
                     </form>
                     <h5>Información del Tercero (opcional)</h5>
-                    <form class="formulario" action="/procesar-siniestro" method="post" enctype="multipart/form-data"
-                        class="formulario siniestros">
-                        <div class="mb-3">
-                            <label for="patente_tercero" class="form-label">Número de Patente</label>
-                            <input class="form-control" type="text" id="patente_tercero" name="patente_tercero">
-                        </div>
-                        <div class="mb-3">
-                            <label for="aseguradora_tercero" class="form-label">Compañía Aseguradora</label>
-                            <input class="form-control" type="text" id="aseguradora_tercero" name="aseguradora_tercero">
-                        </div>
-                        <div class="mb-3">
-                            <label for="poliza_tercero" class="form-label">Número de Póliza</label>
-                            <input class="form-control" type="text" id="poliza_tercero" name="poliza_tercero">
-                        </div>
-                        <div class="mb-3">
-                            <label for="conductor_tercero" class="form-label">Conductor tercero</label>
-                            <input class="form-control" type="text" id="conductor_tercero" name="conductor_tercero">
-                        </div>
+                    <form action="/procesar-siniestro" method="post" enctype="multipart/form-data" class="formulario">
+                        <fieldset class="formulario">
+                            <div class="mb-3">
+                                <label for="patente_tercero" class="form-label">Número de Patente</label>
+                                <input class="form-control" type="text" id="patente_tercero" name="patente_tercero">
+                            </div>
+                            <div class="mb-3">
+                                <label for="aseguradora_tercero" class="form-label">Compañía Aseguradora</label>
+                                <input class="form-control" type="text" id="aseguradora_tercero"
+                                    name="aseguradora_tercero">
+                            </div>
+                            <div class="mb-3">
+                                <label for="poliza_tercero" class="form-label">Número de Póliza</label>
+                                <input class="form-control" type="text" id="poliza_tercero" name="poliza_tercero">
+                            </div>
+                            <div class="mb-3">
+                                <label for="conductor_tercero" class="form-label">Conductor tercero</label>
+                                <input class="form-control" type="text" id="conductor_tercero" name="conductor_tercero">
+                            </div>
+                        </fieldset>
                     </form>
                     <div class="enviar">
                         <button type="submit" class="boton botongral">Enviar siniestro</button>
