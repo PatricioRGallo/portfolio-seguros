@@ -38,7 +38,7 @@
     background-color: #f2f2f2;
 }
 
-.grilla, .galeria {
+.grilla {
     position: relative;
 
     div {
@@ -61,7 +61,7 @@
 
     img {
         width: 90%;
-        height: 17rem;
+        height: 18rem;
         margin: 1rem;
         box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
         object-fit: cover;
@@ -73,7 +73,7 @@
     @media (min-width: 720px) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(3, 30%);
+        grid-template-rows: repeat(3, 32%);
     }
 }
 
@@ -83,16 +83,6 @@
 }
 
 .grilla div:hover h5 {
-    opacity: 1;
-}
-
-//
-.galeria img:hover  {
-    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
-    opacity: .3;
-}
-
-.galeria img:hover {
     opacity: 1;
 }
 
@@ -109,6 +99,7 @@
     border: #04588c 1px solid;
     color: #04588c;
     width: 7rem;
+
     &:hover {
         border: #63b0f2 1px solid;
     }
@@ -124,11 +115,29 @@
 
 
 
-@media (min-width: 1024px) {
-    .galeria {
+.galeria {
+    @media (max-width: 1024px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        align-items: center;
+
+        img {
+            height: rem;
+            object-fit: cover;
+            box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.1);
+
+        }
+    }
+
+    @media (min-width: 1024px) {
         display: flex;
         width: 600;
         height: 430px;
+
+        article {
+            display: none;
+        }
 
         img {
             padding-top: 1rem;
