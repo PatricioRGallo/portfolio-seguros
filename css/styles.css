@@ -185,9 +185,10 @@ h5 {
     align-items: center;
   }
   .galeria img {
-    height: rem;
+    height: 12rem;
     object-fit: cover;
     box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
   }
 }
 @media (min-width: 1024px) {

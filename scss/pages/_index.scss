@@ -123,9 +123,10 @@
         align-items: center;
 
         img {
-            height: rem;
+            height: 12rem;
             object-fit: cover;
             box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.1);
+            border-radius: .5rem;
 
         }
     }
