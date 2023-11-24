@@ -213,9 +213,6 @@ h5 {
   .galeria div {
     position: relative;
   }
-  .galeria div:hover article {
-    opacity: 1;
-  }
   .galeria div img {
     height: 100%;
     object-fit: cover;
@@ -235,177 +232,12 @@ h5 {
     z-index: 2;
     text-align: center;
     width: 80%;
-    margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  }
+  .galeria div:hover article {
+    opacity: 1;
   }
 }
 
-.elementos-cotizables {
-  margin-top: 2rem;
-}
-.elementos-cotizables div {
-  background-color: white;
-  border: 1px solid #e0e0e0;
-  border-radius: 1.25rem;
-  padding: 1.25rem;
-  transition: box-shadow 0.3s;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.elementos-cotizables div:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-@media (min-width: 1024px) {
-  .elementos-cotizables {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 1rem;
-  }
-  .elementos-cotizables .auto-span2 {
-    grid-row: span 2;
-  }
-}
-.elementos-cotizables img {
-  height: 5rem;
-}
-
-a {
-  text-decoration: none;
-}
-
-header {
-  background-image: url(../media/images/fondo.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-header .logoyh1 a {
-  width: 16rem;
-  height: 4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .logoyh1 h1 {
-  margin: 0;
-}
-header .logoyh1 .logo {
-  width: 3rem;
-}
-
-.caja-formulario {
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s, background-color 0.3s;
-}
-.caja-formulario:hover {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-  background-color: #f8f8f8;
-}
-@media (min-width: 720px) {
-  .caja-formulario {
-    padding: 2rem 6.25rem;
-  }
-}
-
-.label {
-  padding: 0.8rem;
-}
-
-@media (min-width: 1024px) {
-  .formulario {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .formulario div {
-    width: 100%;
-    padding: 0rem 1rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .formulariocargardoc {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.boton-wsp {
-  z-index: 9999;
-  width: 4rem;
-  position: fixed;
-  right: 2rem;
-  bottom: 1rem;
-}
-.boton-wsp:hover {
-  bottom: 1.25rem;
-}
-
-.boton {
-  margin: 1rem;
-  padding: 0.6rem;
-  border-radius: 0.2cm;
-  display: inline-block;
-  text-align: center;
-}
-
-.botongral {
-  background-color: #186db9;
-  color: #fff;
-}
-.botongral:hover {
-  background-color: #389bf2;
-}
-
-footer .foot-2 div {
-  padding: 0rem 1rem;
-}
-footer .foot-2 img {
-  width: 12rem;
-}
-@media (min-width: 1024px) {
-  footer .foot-1 {
-    min-height: 300px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-  }
-  footer .foot-2 {
-    padding: 1rem;
-    text-align: center;
-  }
-}
-footer section {
-  padding: 2rem 7rem 2rem 2rem;
-}
-@media (min-width: 1024px) {
-  footer section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-footer .foot-3 {
-  background-color: #04588c;
-  color: #f2f2f2;
-}
-footer .copirig {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-footer .copirig span {
-  padding: 1rem;
-}
-
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=prueba.css.map */
