@@ -208,39 +208,39 @@ h5 {
 @media (min-width: 1024px) {
   .galeria {
     display: flex;
-    height: 430px;
   }
   .galeria div {
     position: relative;
   }
-  .galeria div:hover article {
-    opacity: 1;
-  }
-  .galeria div img {
-    height: 100%;
-    object-fit: cover;
-    padding-top: 1rem;
-  }
-  .galeria div img:hover {
+  .galeria div:hover img {
     width: 300px;
     opacity: 0.3;
     filter: contrast(150%);
   }
-  .galeria div article {
+  .galeria div:hover article {
+    opacity: 1;
+    width: 250px;
+  }
+  .galeria div:hover article p {
+    padding: 0rem 1.5rem;
+  }
+  .galeria img {
+    height: 100%;
+    object-fit: cover;
+    height: 430px;
+  }
+  .galeria img article {
     opacity: 0;
+  }
+  .galeria article {
+    background-color: #f2f2f2;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
     text-align: center;
-    width: 80%;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    opacity: 0;
   }
 }
 
