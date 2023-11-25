@@ -186,34 +186,6 @@ h5 {
   }
 }
 
-@media (max-width: 1024px) {
-  .galeria {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  .galeria div {
-    position: relative;
-  }
-  .galeria div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-  }
-  .galeria div article {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 1rem;
-  }
-}
 @media (min-width: 1024px) {
   .galeria {
     display: flex;
