@@ -67,6 +67,10 @@ h5 {
   }
 }
 
+.navbar-toggler {
+  color: #F2F2F2;
+}
+
 #index {
   padding-bottom: 0rem;
 }
@@ -111,6 +115,7 @@ h5 {
   position: relative;
 }
 .grilla h5 {
+  color: #04588c;
   width: 70%;
   height: 30%;
   display: flex;
@@ -119,10 +124,12 @@ h5 {
   justify-content: center;
   position: absolute;
   top: 50%;
-  left: 4%;
+  left: 2%;
   opacity: 0;
   transition: opacity 0.3s;
   background-color: #f2f2f2;
+  border-top-right-radius: 4rem;
+  border-bottom-right-radius: 4rem;
 }
 .grilla img {
   width: 90%;
