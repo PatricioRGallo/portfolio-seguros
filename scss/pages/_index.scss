@@ -38,59 +38,7 @@
     background-color: #f2f2f2;
 }
 
-.grilla {
-    position: relative;
 
-    div {
-        position: relative;
-    }
-
-    h5 {
-        color: #04588c;
-        width: 70%;
-        height: 30%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 50%;
-        left: 2%;
-        opacity: 0;
-        transition: opacity 0.3s;
-        background-color: #f2f2f2;
-        border-top-right-radius: 4rem;
-        border-bottom-right-radius: 4rem;
-    }
-
-    img {
-        width: 90%;
-        height: 18rem;
-        margin: 1rem;
-        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
-        object-fit: cover;
-        border-radius: 1.25rem;
-        opacity: 1;
-        transition: opacity 0.3s, box-shadow 0.3s;
-    }
-
-    @media (min-width: 720px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(3, 32%);
-    }
-}
-
-.grilla div:hover img {
-    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
-    opacity: .3;
-    filter: contrast(150%);
-    
-}
-
-.grilla div:hover h5 {
-    opacity: 1;
-}
 
 .botonesPortada {
     display: flex;
@@ -122,7 +70,7 @@
 
 
 .galeria {
-    
+
 
     @media (min-width: 1024px) {
         display: flex;
@@ -180,4 +128,57 @@
 
 
     }
+}
+
+.grilla {
+    position: relative;
+
+    div {
+        position: relative;
+    }
+
+    h5 {
+        color: #f2f2f2;
+        width: 70%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 2%;
+        opacity: 0;
+        transition: opacity 0.3s;
+        background-color: $azul-intermedio;
+        border-top-right-radius: 4rem;
+        border-bottom-right-radius: 4rem;
+        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
+
+    }
+
+    img {
+        width: 90%;
+        height: 18rem;
+        margin: 1rem;
+        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
+        border-radius: 1.25rem;
+        opacity: 1;
+        transition: opacity 0.3s, box-shadow 0.3s;
+    }
+
+    @media (min-width: 720px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 32%);
+    }
+}
+
+.grilla div:hover img {
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
+}
+
+.grilla div:hover h5 {
+    opacity: 1;
 }
