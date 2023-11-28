@@ -4,6 +4,7 @@ $azul-claro: #389bf2;
 $azul-intermedio: #186db9;
 $azul-oscuro: #04588c;
 
+
 @mixin fondo-fixed {
     background-image: url(../media/images/fondo.jpg);
     background-size: cover;
@@ -20,6 +21,7 @@ $azul-oscuro: #04588c;
 #logo {
     width: 3rem;
     height: 3rem;
+    
 }
 
 h2,
@@ -47,6 +49,7 @@ h5 {
 
 .enlace {
     color: $azul-intermedio;
+    transition: color 0.3s ease;
 
     &:hover {
         color: $azul-claro;
@@ -78,6 +81,7 @@ main {
         }
     }
 }
+
 .navbar-toggler {
     color: $semiblanco;
 }

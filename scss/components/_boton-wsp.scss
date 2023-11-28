@@ -4,6 +4,7 @@
     position: fixed;
     right: 2rem;
     bottom: 1rem;
+    transition: bottom 0.3s ease;
 
     &:hover {
         bottom: 1.25rem;

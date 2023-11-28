@@ -53,7 +53,7 @@
     border: #04588c 1px solid;
     color: #04588c;
     width: 7rem;
-
+    transition: border 0.3s;
     &:hover {
         border: #63b0f2 1px solid;
     }
@@ -84,6 +84,7 @@
                     width: 19rem;
                     opacity: .3;
                     filter: contrast(150%);
+
 
 
                 }
