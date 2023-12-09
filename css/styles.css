@@ -10,6 +10,17 @@
   height: 3rem;
 }
 
+h1 {
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+h1.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 h2,
 h3,
 h4,

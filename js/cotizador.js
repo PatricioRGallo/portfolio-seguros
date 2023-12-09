@@ -1,51 +1,73 @@
-function solicitarCotizacion() {
-    const marca = document.getElementById('marca').value;
-    const año = document.getElementById('año').value;
-    const modelo = document.getElementById('modelo').value;
+// Validar formulario de accidentes personales
+function validarAccidentesPersonales() {
+    var actividad = document.getElementById('actividad').value;
+    var cantidadPersonas = document.getElementById('cantidad-personas-ap').value;
+    var telefono = document.getElementById('tel').value;
+    var email = document.getElementById('mail').value;
+    var provincia = document.getElementById('provincia').value;
 
-    const telefono = document.getElementById('tel').value;
-    const email = document.getElementById('mail').value;
-    const provincia = document.getElementById('provincia').value;
-
-    if (!marca || !año || !modelo || !telefono || !email || !provincia) {
-        alert('Por favor, completa todos los campos del formulario.');
-        return;
+    if (actividad === '' || cantidadPersonas === '' || telefono === '' || provincia === '') {
+        alert('Por favor, completa todos los campos obligatorios.');
+        return false;
     }
 
-    if (isNaN(año) || año.toString().length !== 4 || año < 1900 || año > new Date().getFullYear()) {
-        alert('Ingresa un año de vehículo válido.');
-        return;
-    }
+    // Puedes realizar más validaciones según tus necesidades
 
-    const telefonoPattern = /^\d{10}$/;
-    if (!telefonoPattern.test(telefono)) {
-        alert('Ingresa un número de teléfono válido (10 dígitos sin espacios ni guiones).');
-        return;
-    }
-
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email)) {
-        alert('Ingresa una dirección de correo electrónico válida.');
-        return;
-    }
-
-    const solicitud = {
-        vehiculo: {
-            marca,
-            año,
-            modelo
-        },
-        datosPersonales: {
-            telefono,
-            email,
-            provincia
-        }
-    };
-
-    // Puedes enviar la solicitud al servidor o realizar alguna acción adicional aquí
-    // (por ejemplo, almacenar la solicitud en una base de datos, enviar un correo electrónico, etc.)
-
-    console.log(solicitud);
-
-    alert('Solicitud de cotización enviada con éxito. Te contactaremos pronto.');
+    return true;
 }
+
+// Validar formulario de seguro automotor
+function validarSeguroAutomotor() {
+    var marca = document.getElementById('marca').value;
+    var año = document.getElementById('año').value;
+    var modelo = document.getElementById('modelo').value;
+    var telefono = document.getElementById('tel').value;
+    var email = document.getElementById('mail').value;
+    var provincia = document.getElementById('provincia').value;
+
+    if (marca === '' || año === '' || modelo === '' || telefono === '' || provincia === '') {
+        alert('Por favor, completa todos los campos obligatorios.');
+        return false;
+    }
+
+    // Puedes realizar más validaciones según tus necesidades
+
+    return true;
+}
+
+// Validar formulario de seguro de vida y capitalización
+function validarSeguroVidaCapitalizacion() {
+    var actividad = document.getElementById('actividad').value;
+    var cantidadPersonas = document.getElementById('cantidad-personas-ap').value;
+    var telefono = document.getElementById('tel').value;
+    var email = document.getElementById('mail').value;
+    var provincia = document.getElementById('provincia').value;
+
+    if (actividad === '' || cantidadPersonas === '' || telefono === '' || provincia === '') {
+        alert('Por favor, completa todos los campos obligatorios.');
+        return false;
+    }
+
+    // Puedes realizar más validaciones según tus necesidades
+
+    return true;
+}
+
+// Asignar funciones de validación a los formularios
+document.querySelector('#formularioAccidentesPersonales').addEventListener('submit', function (e) {
+    if (!validarAccidentesPersonales()) {
+        e.preventDefault();
+    }
+});
+
+document.querySelector('#datosVehiculoForm').addEventListener('submit', function (e) {
+    if (!validarSeguroAutomotor()) {
+        e.preventDefault();
+    }
+});
+
+document.querySelector('#formularioVidaCapitalizacion').addEventListener('submit', function (e) {
+    if (!validarSeguroVidaCapitalizacion()) {
+        e.preventDefault();
+    }
+});
