@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -58,6 +58,7 @@
             <div class="caja-formulario">
                 <h4>Completá...</h4>
                 <h5>Datos de tu vehículo...</h5>
+                <div id="msj-error-cotizador"></div>
                 <form id="formularioSeguroAutomotor" action="">
                     <fieldset class="formulario">
 
@@ -67,7 +68,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="año" class="form-label">Año</label>
-                            <input type="number" id="año" class="form-control">
+                            <input type="number" id="year" class="form-control">
                         </div>
                         <div class="mb-3">
                             <label for="modelo" class="form-label">Modelo</label>
@@ -120,7 +121,7 @@
                     </fieldset>
                 </form>
                 <div class="enviar">
-                    <button type="submit" class="boton botongral" onclick="solicitarCotizacion()">Solicitar cotización</button>
+                    <button type="submit" onclick="cotizarSeguro()" class="boton botongral" onclick="solicitarCotizacion()">Solicitar cotización</button>
                 </div>
                 <p>Tené en cuenta que no recibirás una cotización automática, sino que serás contactado por un
                     especialista para obtener un asesoramiento preciso.

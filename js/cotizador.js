@@ -1,73 +1,26 @@
-// Validar formulario de accidentes personales
-function validarAccidentesPersonales() {
-    var actividad = document.getElementById('actividad').value;
-    var cantidadPersonas = document.getElementById('cantidad-personas-ap').value;
-    var telefono = document.getElementById('tel').value;
-    var email = document.getElementById('mail').value;
-    var provincia = document.getElementById('provincia').value;
+const cotizarSeguro = () => {
+    let marca = document.querySelector("#marca").value;
+    let year = document.querySelector("#year").value;
+    let modelo = document.querySelector("#modelo").value;
+    let tel = document.querySelector("#tel").value;
+    let mail = document.querySelector("#mail").value;
+    let provincia = document.querySelector("#provincia").value;
+    
+    let divResumen = document.querySelector("#resumen");
 
-    if (actividad === '' || cantidadPersonas === '' || telefono === '' || provincia === '') {
-        alert('Por favor, completa todos los campos obligatorios.');
-        return false;
+    if (marca === '' ||
+        year === '' ||
+        modelo === '' ||
+        tel === '' ||
+        mail === '') {
+        mostrarError("#msj-error-cotizador", "Falta seleccionar opciones");
+        return;
     }
-
-    // Puedes realizar más validaciones según tus necesidades
-
-    return true;
+    let cotizacion = { marca, year, modelo, tel, mail, provincia };
 }
 
-// Validar formulario de seguro automotor
-function validarSeguroAutomotor() {
-    var marca = document.getElementById('marca').value;
-    var año = document.getElementById('año').value;
-    var modelo = document.getElementById('modelo').value;
-    var telefono = document.getElementById('tel').value;
-    var email = document.getElementById('mail').value;
-    var provincia = document.getElementById('provincia').value;
-
-    if (marca === '' || año === '' || modelo === '' || telefono === '' || provincia === '') {
-        alert('Por favor, completa todos los campos obligatorios.');
-        return false;
-    }
-
-    // Puedes realizar más validaciones según tus necesidades
-
-    return true;
+const mostrarError = (elemento, mensaje) => {
+    divError = document.querySelector(elemento);
+    divError.innerHTML = `<p class="alerta-error">${mensaje}</p>`;
+    setTimeout(() => { divError.innerHTML = ``; }, 2000);
 }
-
-// Validar formulario de seguro de vida y capitalización
-function validarSeguroVidaCapitalizacion() {
-    var actividad = document.getElementById('actividad').value;
-    var cantidadPersonas = document.getElementById('cantidad-personas-ap').value;
-    var telefono = document.getElementById('tel').value;
-    var email = document.getElementById('mail').value;
-    var provincia = document.getElementById('provincia').value;
-
-    if (actividad === '' || cantidadPersonas === '' || telefono === '' || provincia === '') {
-        alert('Por favor, completa todos los campos obligatorios.');
-        return false;
-    }
-
-    // Puedes realizar más validaciones según tus necesidades
-
-    return true;
-}
-
-// Asignar funciones de validación a los formularios
-document.querySelector('#formularioAccidentesPersonales').addEventListener('submit', function (e) {
-    if (!validarAccidentesPersonales()) {
-        e.preventDefault();
-    }
-});
-
-document.querySelector('#datosVehiculoForm').addEventListener('submit', function (e) {
-    if (!validarSeguroAutomotor()) {
-        e.preventDefault();
-    }
-});
-
-document.querySelector('#formularioVidaCapitalizacion').addEventListener('submit', function (e) {
-    if (!validarSeguroVidaCapitalizacion()) {
-        e.preventDefault();
-    }
-});
