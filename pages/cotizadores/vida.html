@@ -74,7 +74,7 @@
                     </fieldset>
                 </form>
                 <h5>Sobre vos...</h5>
-                <form action="">
+                <form id="formularioSobreVos" action="">
                     <fieldset class="formulario">
                         <div class="mb-3">
                             <label for="tel" class="form-label">Teléfono</label>
@@ -115,8 +115,9 @@
                         </div>
                     </fieldset>
                 </form>
-                <div class="enviar">
-                    <button type="submit" onclick="cotizarSeguro()" class="boton botongral">Solicitar cotización</button>
+                <div>
+                    <p class="warnings" id="warnings"></p>
+                    <button type="submit" class="boton botongral">Solicitar cotización</button>
                 </div>
                 <p>Tené en cuenta que no recibirás una cotización automática, sino que serás contactado por un
                     especialista para obtener un asesoramiento preciso.
@@ -155,11 +156,12 @@
             <span>Powered by PG</span>
         </section>
     </footer>
-    <script src="../../js/cotizador.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
         <script src="../../js/main.js"></script>
+        <script src="../../js/validarFormularios.js"></script>
+
 
 </body>
 

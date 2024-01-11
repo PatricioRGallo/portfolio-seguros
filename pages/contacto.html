@@ -62,24 +62,25 @@
             <div class="caja-formulario">
                 <h4>Contáctanos</h4>
                 <h5>Completá tu información...</h5>
-                <form action="/procesar-formulario" method="post" class="formulario">
+                <form action="/procesar-formulario" method="post" class="formulario" id="formularioContacto">
                     <div class="mb-3">
                         <label class="form-label" for="nombre">Nombre:</label>
                         <input class="form-control" type="text" id="nombre" name="nombre" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label" for="mail">Email</label>
-                        <input class="form-control" type="email" id="mail" placeholder="Correo Electrónico" required>
+                        <input class="form-control" type="email" id="mail" placeholder="Correo Electrónico">
                     </div>
                     <div class="mb-3">
                         <label class="form-label" for="telefono">Teléfono:</label>
-                        <input class="form-control" type="tel" id="telefono" name="telefono">
+                        <input class="form-control" type="tel" id="tel" name="telefono" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label" for="mensaje">Mensaje:</label>
                         <textarea class="form-control" id="mensaje" name="mensaje" required></textarea>
                     </div>
                     <div>
+                        <p class="warnings" id="warnings"></p>
                         <button type="submit" class="boton botongral">Enviar</button>
                     </div>
                 </form>
@@ -116,6 +117,8 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
         <script src="../js/main.js"></script>
+        <script src="../js/validarFormularios.js"></script>
+
 
 </body>
 
