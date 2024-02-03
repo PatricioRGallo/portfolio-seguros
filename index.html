@@ -56,10 +56,27 @@
 
 
   <main>
-    <div>
-      <a href="https://wa.me/5493815906102" target="_blank" aria-label="Ir a Whatsapp">
+    <div class="chatPagina">
+      <a href="javascript:void(0);" id="chatBot" onclick="toggleChat()" aria-label="Chateá con nosotros">
         <img src="./media/images/whatsapp.png" alt="Ir a Whatsapp" class="boton-wsp" />
       </a>
+      <div id="chatBox">
+
+        <ul>
+          <li><button onclick="mostrarRespuesta('Descargar documentos')">📄 Descargar documentos</button></li>
+          <li><button onclick="mostrarRespuesta('Contratar un seguro')">🛡️ Contratar un seguro</button></li>
+          <li><button onclick="mostrarRespuesta('Reportar un siniestro')">🚗 Reportar un siniestro</button></li>
+          <li><button onclick="mostrarRespuesta('Solicitar servicio de remolque')">🚑 Solicitar servicio de
+              remolque</button></li>
+          <li><button onclick="mostrarRespuesta('Transferir un vehículo')">📝 Transferir un vehículo</button></li>
+          <li><button onclick="mostrarRespuesta('Tengo otra pregunta')">Tengo otra pregunta</button></li>
+        </ul>
+        <div id="chatMensajes">
+        </div>
+        <input type="text" id="respuestaChat" placeholder="Escribe el número de tu consulta">
+        <button onclick="enviarMensaje()">Enviar</button>
+        <button class="boton botongral" onclick="ocultarCaja()">Cerrar</button>
+      </div>
     </div>
 
     <section class="portada" id="index">

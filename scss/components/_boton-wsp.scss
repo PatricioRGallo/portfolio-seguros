@@ -5,8 +5,90 @@
     right: 2rem;
     bottom: 1rem;
     transition: bottom 0.3s ease;
+}
 
-    &:hover {
-        bottom: 1.25rem;
+#chatBox {
+    position: fixed;
+    bottom: 6rem;
+    right: 2rem;
+    padding: 1rem;
+    background-color: $semiblanco;
+    border: 1px solid $azul-claro;
+    border-radius: 5px;
+    display: none;
+    z-index: 10000;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            button {
+                background-color: $celeste;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                cursor: pointer;
+                font-size: 14px;
+                margin-bottom: 5px;
+                padding: 8px;
+                width: 100%;
+                text-align: left;
+
+                &:hover {
+                    background-color: $azul-intermedio;
+                }
+            }
+        }
+    }
+
+    #chatMensajes {
+        max-height: 200px;
+        overflow-y: auto;
+        padding: 10px;
+    }
+
+    .mensaje {
+        background-color: $azul-claro;
+        border-radius: 5px;
+        color: white;
+        margin-bottom: 10px;
+        padding: 8px;
+
+        &.enviado {
+            background-color: $azul-oscuro;
+            align-self: flex-end;
+        }
+    }
+
+    #respuestaChat {
+        border: 1px solid $azul-claro;
+        border-radius: 5px;
+        margin-top: 10px;
+        padding: 8px;
+        width: calc(100% - 16px);
+    }
+
+    button.boton {
+        background-color: $celeste;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        margin-top: 10px;
+        padding: 8px;
+        width: calc(100% - 16px);
+
+        &:hover {
+            background-color: $azul-intermedio;
+        }
     }
 }

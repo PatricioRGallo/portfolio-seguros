@@ -1,0 +1,149 @@
+[33mcommit eaef733107ddfd963c3490c5b3522239125d631d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Tue Jan 16 16:17:35 2024 -0300
+
+    Aplicando correcciones JavaScript
+
+[33mcommit eee57c64e2d4f3e0d107b2dfbfc46b25a8b6386a[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Wed Jan 10 23:37:31 2024 -0300
+
+    Validando formularios.
+
+[33mcommit 572e8afe8e85240e3a51f3402e9823030764c395[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Wed Jan 3 09:16:11 2024 -0300
+
+    New favicon
+
+[33mcommit 5b49ccc7b0d476c5eb7d04330fccfc04edaf4c97[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Wed Jan 3 08:55:58 2024 -0300
+
+    Corrigiendo lenguaje de páginas
+
+[33mcommit 3ef06332a3726f201cfbaf28d700f36cacbb822f[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Sat Dec 9 18:06:18 2023 -0300
+
+    Aplicando transicion javascript en h1
+
+[33mcommit 352f8d0d3a990d029f754f510833792d9d687551[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Fri Dec 8 12:11:25 2023 -0300
+
+    Empezando a incluir Javascript
+
+[33mcommit c5c60d18787a239f7aaadb584f8c6b2232453332[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Mon Nov 27 21:51:49 2023 -0300
+
+    Sutiles correcciones de estilo
+
+[33mcommit 568b3e197de0c884f08e66f66e4f5a6e8bf155c2[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Sat Nov 25 22:44:03 2023 -0300
+
+    Correcciones de estilo en grilla index
+
+[33mcommit f3e3e1fb0d03a69c1c1aec3958bb57fad8e4ef27[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Sat Nov 25 18:24:54 2023 -0300
+
+    Aplicando SEO
+
+[33mcommit f23f325228934e6df6bc76325e133dbd760971dc[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Sat Nov 25 15:10:03 2023 -0300
+
+    Correcciones a index en versión mobile
+
+[33mcommit 97c0832513647c2ce8ea6a043d55353708a0f33a[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Sat Nov 25 12:37:19 2023 -0300
+
+    Correcciones de estilo en grilla.
+
+[33mcommit 55f1ae31176dc28d2e44a34d887097c00ce4cf64[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Sat Nov 25 12:18:20 2023 -0300
+
+    Correcciones en grilla index.
+
+[33mcommit 476d4b8e5057c4f0f0ef800578c513770a537038[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Sat Nov 25 11:46:22 2023 -0300
+
+    Galería lograda: Queda pendiente aplicar transiciones.
+
+[33mcommit 52b1892c8c396dae20467f37779ad0ed4f8b87c3[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Fri Nov 24 18:44:20 2023 -0300
+
+    Modificaciones en galería index. Inclusión de texto en la imagen, aún no se logra el resultado deseado.
+
+[33mcommit 4286076c087c80cc3746c1ff9cbd66abb2fae77e[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Fri Nov 24 09:44:02 2023 -0300
+
+    Aplicando correcciones a galería de index
+
+[33mcommit 8c7b17b705c7fcc210f6fb27e5e458c05fc28e7f[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Thu Nov 23 18:33:06 2023 -0300
+
+    Aplicando Favicon y estilos en index.
+
+[33mcommit 3933816c233397be68b9d1a774b9aec110c0b3bd[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Thu Nov 23 18:28:32 2023 -0300
+
+    Aplicando correcciones a index y eliminando subrayados de etiquetas en cotizador.
+
+[33mcommit 5735d361dd681bdcb951484b6c026f675a62270e[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Tue Nov 21 14:48:06 2023 -0300
+
+    Correcciones en galería y grilla de index
+
+[33mcommit 3e0783d0560fb35dca21aa9038ba47829c987f88[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Sun Nov 19 23:24:06 2023 -0300
+
+    Se aplican correcciones en reunion.html
+
+[33mcommit 6b5b5f50791b57332dc7f5998edfae0327a64087[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Sun Nov 19 22:58:39 2023 -0300
+
+    Se aplican correcciones a formularios
+
+[33mcommit cd9710bcb0a5c399a50fa9da3ad6746cc152f969[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Sun Nov 19 21:42:13 2023 -0300
+
+    Se aplican clases Bootstrap para formularios. Queda trabajo pendiente.
+
+[33mcommit 1b5fb667d7e0ebc1dd61e877365c9939475bda89[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Sun Nov 19 19:13:32 2023 -0300
+
+    Incluyendo Bootstrap al proyecto.
+
+[33mcommit 22ed08377eaf28f699d7863e49cdade3b8b9b644[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Sun Nov 19 01:29:50 2023 -0300
+
+    Se corrigen enlaces header nav y se agregan imagenes al cotizador
+
+[33mcommit 0d8a839255b5fcffc760889de4d854bc758b2ded[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Sat Nov 18 23:53:20 2023 -0300
+
+    Incluyendo SASS
+
+[33mcommit 159afdc787e7ec2f0854433354784411e6062c91[m
+Author: Patricio Gallo <prgasesor@gmail.com>
+Date:   Wed Nov 15 16:29:12 2023 -0300
+
+    Inicio del proyecto

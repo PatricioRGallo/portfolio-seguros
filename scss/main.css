@@ -172,7 +172,8 @@ h5 {
   }
   .galeria img {
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 430px;
   }
   .galeria img article {
@@ -219,7 +220,8 @@ h5 {
   height: 18rem;
   margin: 1rem;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 1.25rem;
   opacity: 1;
   transition: opacity 0.3s, box-shadow 0.3s;
@@ -349,73 +351,14 @@ header .logoyh1 .logo {
   bottom: 6rem;
   right: 2rem;
   padding: 1rem;
-  background-color: #F2F2F2;
-  border: 1px solid #389bf2;
+  background-color: #fff;
+  border: 1px solid #ccc;
   border-radius: 5px;
   display: none;
   z-index: 10000;
-  max-width: 300px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 #chatBox p {
   margin-bottom: 1rem;
-}
-#chatBox ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-#chatBox ul li button {
-  background-color: #63b0f2;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer;
-  font-size: 14px;
-  margin-bottom: 5px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-}
-#chatBox ul li button:hover {
-  background-color: #186db9;
-}
-#chatBox #chatMensajes {
-  max-height: 200px;
-  overflow-y: auto;
-  padding: 10px;
-}
-#chatBox .mensaje {
-  background-color: #389bf2;
-  border-radius: 5px;
-  color: white;
-  margin-bottom: 10px;
-  padding: 8px;
-}
-#chatBox .mensaje.enviado {
-  background-color: #04588c;
-  align-self: flex-end;
-}
-#chatBox #respuestaChat {
-  border: 1px solid #389bf2;
-  border-radius: 5px;
-  margin-top: 10px;
-  padding: 8px;
-  width: calc(100% - 16px);
-}
-#chatBox button.boton {
-  background-color: #63b0f2;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer;
-  font-size: 14px;
-  margin-top: 10px;
-  padding: 8px;
-  width: calc(100% - 16px);
-}
-#chatBox button.boton:hover {
-  background-color: #186db9;
 }
 
 .boton {
@@ -481,6 +424,4 @@ footer .copirig span {
   margin: auto;
   color: #04588c;
   padding: 1rem 1rem;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=main.css.map */
