@@ -30,6 +30,10 @@ function mostrarRespuesta(respuesta) {
     respuestaChat.value = respuesta;
 }
 
+document.querySelector('.boton').onclick = function() {
+    reportarSiniestroIntro('Reportar un siniestro');
+};
+
 function enviarMensaje() {
     console.log("Enviando mensaje...");
 
@@ -45,6 +49,11 @@ function enviarMensaje() {
     const match = mensaje.match(regex);
 
     if (match) {
+        if (etapaReporteSiniestro > 0) {
+            reportarSiniestro();
+            return;
+        }
+
         let infoCliente = {
             nombre: capitalizeFirstLetter(match[1]),
             patente: match[2],
@@ -54,19 +63,16 @@ function enviarMensaje() {
         const cliente1 = new Cliente(infoCliente);
         console.log(cliente1);
 
-
         nuevoMensaje.textContent = `¡Bienvenido, ${cliente1.nombre}! Dime, ¿en qué puedo ayudarte hoy?`;
-
         let opciones = document.createElement('ul');
         opciones.innerHTML = `
-            <li><button onclick="mostrarRespuesta('Descargar documentos')">📄 Descargar documentos</button></li>
-            <li><button onclick="mostrarRespuesta('Contratar un seguro')">🛡️ Contratar un seguro</button></li>
-            <li><button onclick="mostrarRespuesta('Reportar un siniestro')">🚗 Reportar un siniestro</button></li>
+            <li><button onclick="descargarDocument('Descargar documentos')">📄 Descargar documentos</button></li>
+            <li><button onclick="contratarNuevoSeguro('Contratar un seguro')">🛡️ Contratar un seguro</button></li>
+            <li><button onclick="reportarSiniestroIntro('Reportar un siniestro')">🚗 Reportar un siniestro</button></li>
             <li><button onclick="solicitarRemolque('${cliente1.compania}')">🚑 Solicitar servicio de remolque</button></li>
-            <li><button onclick="mostrarRespuesta('Transferir un vehículo')">📝 Transferir un vehículo</button></li>
-            <li><button onclick="mostrarRespuesta('Tengo otra pregunta')">🤔 Tengo otra pregunta</button></li>
+            <li><button onclick="transferencias('Transferir un vehículo')">📝 Transferir un vehículo</button></li>
+            <li><button onclick="otraPregunta('Tengo otra pregunta')">🤔 Tengo otra pregunta</button></li>
         `;
-
         nuevoMensaje.appendChild(opciones);
     } else {
         nuevoMensaje.textContent = mensaje;
@@ -78,6 +84,64 @@ function enviarMensaje() {
 
 function capitalizeFirstLetter(word) {
     return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+function reportarSiniestroIntro(respuesta) {
+    let chatMensajes = document.getElementById('chatMensajes');
+
+    switch (respuesta) {
+        case 'Descargar documentos':
+            agregarMensaje('A continuación te enviaremos un enlace para descargar los documentos.');
+            break;
+        case 'Contratar un seguro':
+            agregarMensaje('¿Deseas cotizar un nuevo seguro o renovar uno existente?');
+            break;
+        case 'Reportar un siniestro':
+            agregarMensaje('Por favor, proporciónanos la fecha del siniestro (Formato: DD/MM/AAAA)');
+            etapaReporteSiniestro = 1;
+            break;
+        case 'Solicitar servicio de remolque':
+            agregarMensaje('¿Podrías indicarnos la compañía de seguros con la que estás afiliado?');
+            break;
+        case 'Transferir un vehículo':
+            agregarMensaje('Por favor, proporciónanos los detalles del vehículo que deseas transferir.');
+            break;
+        case 'Tengo otra pregunta':
+            agregarMensaje('Por favor, pregunta lo que necesites y te ayudaremos.');
+            break;
+        default:
+            agregarMensaje('Lo siento, no entendí tu solicitud. ¿En qué más puedo ayudarte?');
+    }
+}
+
+let etapaReporteSiniestro = 0;
+
+function reportarSiniestro() {
+    switch (etapaReporteSiniestro) {
+        case 1:
+            let fechaSiniestro = document.getElementById('respuestaChat').value;
+            agregarMensaje(`La fecha del siniestro es: ${fechaSiniestro}. ¡Bien! Ahora, dinos a qué hora ocurrió tu siniestro (Formato: HH:MM)`);
+            etapaReporteSiniestro = 2;
+            break;
+        case 2:
+            let horaSiniestro = document.getElementById('respuestaChat').value;
+            agregarMensaje(`La hora del siniestro es: ${horaSiniestro}. ¿Podrías indicarnos el lugar donde ocurrió el siniestro?`);
+            etapaReporteSiniestro = 3;
+            break;
+        case 3:
+            let lugarSiniestro = document.getElementById('respuestaChat').value;
+            agregarMensaje(`El siniestro ocurrió en: ${lugarSiniestro}. Por favor, danos un relato de cómo ocurrió el siniestro.`);
+            etapaReporteSiniestro = 4;
+            break;
+        case 4:
+            let relatoSiniestro = document.getElementById('respuestaChat').value;
+            agregarMensaje(`¡Gracias por proporcionar la información sobre el siniestro! Nos pondremos en contacto contigo pronto.`);
+            etapaReporteSiniestro = 0;
+            break;
+        default:
+            agregarMensaje('Lo siento, ha ocurrido un error en el proceso de reporte de siniestro. Por favor, intenta nuevamente.');
+            etapaReporteSiniestro = 0;
+    }
 }
 
 function solicitarRemolque(compania) {
@@ -115,5 +179,5 @@ function agregarMensaje(mensaje) {
     nuevoMensaje.textContent = mensaje;
 
     chatMensajes.appendChild(nuevoMensaje);
-    document.getElementById('respuestaChat').value = ""; // Limpia el input después de agregar el mensaje
+    document.getElementById('respuestaChat').value = "";
 }
